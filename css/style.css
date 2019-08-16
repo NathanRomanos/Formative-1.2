@@ -1,4 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+.navMobile {
+  width: 100%;
+  height: 100vh;
+  background-color: #FF9B12; }
+
+.navMobile__close {
+  width: 50px; }
+
+.navMobile__logo {
+  width: 50%;
+  margin: 0 25%; }
+
+.navMobile__list {
+  margin-top: 20vh; }
+  .navMobile__list ul li {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 2em;
+    margin: 5%; }
+
+.navMobile__social img {
+  width: 5%;
+  margin: 0 11.11%; }
+
 body {
-  background-color: wheat; }
+  background-color: #333; }
+
+.burger__img {
+  width: 50px; }
 
 /*# sourceMappingURL=style.css.map */

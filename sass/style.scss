@@ -1,3 +1,15 @@
+// PARTIALS
+
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'nav';
+
+
 body{
-  background-color: wheat;
+  background-color: #333;
+}
+
+.burger__img{
+  width: 50px;
 }
