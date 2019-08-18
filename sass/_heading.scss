@@ -1,0 +1,19 @@
+.header__logo{
+  width: 50%;
+  margin: 50px 25%;
+}
+
+.scroll{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  .scroll__img{
+    width: 50px;
+  }
+}
+
+.header__hours, .header__location{
+  text-align: center;
+}

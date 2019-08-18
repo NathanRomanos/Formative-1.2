@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: sans-serif;
+  scroll-behavior: smooth; }
 
 .navMobile {
   display: none;
@@ -39,10 +41,80 @@
     width: 10%;
     margin: 0 11.25%; }
 
+.menu {
+  width: 90%;
+  margin: 0 5%; }
+
+.menu__content {
+  display: block; }
+
+.menu__header {
+  text-align: center; }
+
+.menu__selectors img, .menu__selectors h3 {
+  display: inline; }
+
+.menu__item {
+  width: 100%; }
+
+.menu__item--price {
+  float: right;
+  display: inline;
+  width: 20%;
+  text-align: right; }
+
+.menu__item--price::after {
+  clear: button; }
+
+.menu__item--text {
+  display: inline;
+  float: left;
+  width: 80%; }
+
+.menu__item--text::after {
+  clear: both; }
+
+.menu__book {
+  width: 100vw; }
+  .menu__book button {
+    width: 40%;
+    background-color: #FF9B12;
+    padding: 10px;
+    margin: 50px 30%; }
+
+.header__logo {
+  width: 50%;
+  margin: 50px 25%; }
+
+.scroll {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  z-index: 1; }
+  .scroll .scroll__img {
+    width: 50px; }
+
+.header__hours, .header__location {
+  text-align: center; }
+
 body {
-  background-color: #333; }
+  padding-top: 50px; }
+
+.burger {
+  width: 100%;
+  padding: 8px 0 5px 8px;
+  background-color: #FF9B12;
+  position: fixed;
+  top: 0;
+  z-index: 2; }
 
 .burger__img {
   width: 50px; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #FF9B12; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+.menu{
+  width: 90%;
+  margin: 0 5%;
+}
+
+.menu__content{
+  display: block;
+}
+
+
+.menu__header{
+  text-align: center;
+}
+
+
+.menu__selectors{
+  img{
+  }
+  img, h3{
+    display: inline;
+  }
+}
+
+
+.menu__item{
+  width: 100%;
+}
+
+.menu__item--price{
+  float: right;
+  display: inline;
+  width: 20%;
+  text-align: right;
+}
+
+.menu__item--price::after{
+  clear: button;
+}
+
+.menu__item--text{
+  display: inline;
+  float: left;
+  width: 80%;
+}
+
+.menu__item--text::after{
+  clear: both;
+}
+
+.menu__book{
+  width: 100vw;
+  button{
+    width: 40%;
+    background-color: $color1;
+    padding: 10px;
+    margin: 50px 30%;
+  }
+}

@@ -4,12 +4,40 @@
 @import 'variables';
 @import 'mixins';
 @import 'nav';
+@import 'menu';
+@import 'heading';
 
 
 body{
-  background-color: #333;
+  // background-color: grey;
+  padding-top: 50px;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+
+.burger{
+  width: 100%;
+  padding: 8px 0 5px 8px;
+  background-color: $color1;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 .burger__img{
   width: 50px;
+}
+
+
+.header{
+  width: 100%;
+  height: 100vh;
+  background-color: $color1;
 }
