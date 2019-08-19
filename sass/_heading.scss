@@ -1,6 +1,26 @@
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/food1.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.header__transImg{
+  width: 60%;
+  height: 50vh;
+  position: relative;
+  top: 300px;
+  left: 250px;
+  z-index: 0;
+}
+
+
 .header__logo{
-  width: 50%;
-  margin: 50px 25%;
+  width: 80%;
+  margin: 8vh 10% 0 10%;
+  z-index: 1;
 }
 
 .scroll{
@@ -14,6 +34,34 @@
   }
 }
 
-.header__hours, .header__location{
+.header__hours{
+  padding-top: 20px;
   text-align: center;
+  width: 60%;
+  color: $color2;
+  margin: 12vh auto 0 auto;
+  background-image: url(../images/rectangle2.png);
+}
+
+.header__location{
+  padding-top: 12vh;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 60%;
+  color: $color2;
+  margin: auto;
+  background-image: url(../images/rectangle2.png);
+}
+
+@media only screen and (min-width: 650px){
+
+  .header__logo{
+    width: 50%;
+    margin: 8vh 25% 0 25%;
+    z-index: 1;
+  }
+
+  .header__hours, .header__location{
+    width: 35%
+  }
 }
