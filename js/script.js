@@ -6,7 +6,7 @@ $(document).ready(function(){
     $('.navMobile').fadeToggle(200);
   })
 
-  $('#close').click(function(){
+  $('.close').click(function(){
     $('.navMobile').fadeOut(200);
   })
 

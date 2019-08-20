@@ -4,8 +4,10 @@
 @import 'variables';
 @import 'mixins';
 @import 'nav';
+@import 'about';
 @import 'menu';
 @import 'heading';
+@import 'footer';
 
 
 body{
@@ -23,6 +25,7 @@ h3{
 
 
 .burger{
+  display: block;
   width: 100%;
   padding: 5px 0 2px 5px;
   background-color: $color1;
@@ -33,4 +36,80 @@ h3{
 
 .burger__img{
   width: 40px;
+}
+
+
+.homeAbout{
+  text-align: center;
+  width: 90%;
+  margin: 50px 5% 0 5%;
+  img{
+    width: 100%;
+    padding: 20px 0;
+  }
+  p{
+    text-align: left;
+  }
+}
+
+.homeAbout__more{
+  width: 100%;
+  button{
+    width: 40%;
+    background-color: $color1;
+    padding: 10px;
+    margin: 20px 30%;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  button:active{
+    background-color: white;
+  }
+}
+
+@media only screen and (min-width: 650px){
+  .homeAbout__content{
+    float: left;
+    width: 50%;
+    height: 50vw;
+  }
+  .homeAbout{
+    img{
+      width: 50%;
+      padding: 20px 5% 20px 0;
+      float: left;
+    }
+    p{
+      padding: 20px 0;
+    }
+  }
+
+  .homeAbout__more{
+    width: 100%;
+    float: left;
+    button{
+      width: 40%;
+      background-color: $color1;
+      padding: 10px;
+      margin: 0;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    button:active{
+      background-color: white;
+    }
+  }
+  .homeAbout__more::after{
+    clear: both;
+  }
+}
+
+
+@media only screen and (min-width: 1000px){
+  .burger{
+    display: none;
+  }
+  body{
+    padding: 0;
+  }
 }

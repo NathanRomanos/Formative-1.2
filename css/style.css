@@ -111,6 +111,9 @@
   margin: 8vh 10% 0 10%;
   z-index: 1; }
 
+.navDesktop {
+  display: none; }
+
 .scroll {
   text-align: center;
   width: 100%;
@@ -145,10 +148,71 @@
 
   .header__hours, .header__location {
     width: 35%; } }
+@media only screen and (min-width: 1000px) {
+  .header__hours {
+    float: left;
+    padding: 20px 0;
+    text-align: center;
+    width: 20%;
+    color: white;
+    margin: 8vh 0 0 30%;
+    background-image: url(../images/rectangle2.png); }
+
+  .header__location {
+    float: left;
+    padding: 20px 0;
+    text-align: center;
+    width: 20%;
+    color: white;
+    margin: 8vh 30% 0 0%;
+    background-image: url(../images/rectangle2.png); }
+
+  .navDesktop {
+    display: block;
+    margin-top: 8vh; }
+    .navDesktop ul {
+      text-align: center;
+      background-image: url(../images/rectangle2.png); }
+      .navDesktop ul li {
+        text-align: center;
+        color: white;
+        font-family: monospace;
+        font-size: 2em;
+        margin: 5vh;
+        display: inline; } }
+footer {
+  width: 100%;
+  height: 252px;
+  background-color: #FF9B12; }
+
+.footer__social {
+  width: 60px;
+  float: left; }
+  .footer__social img {
+    width: 100%;
+    margin: 10px; }
+
+.footer__hours {
+  padding-top: 25px;
+  text-align: center;
+  color: white; }
+
+.footer__location {
+  text-align: center;
+  color: white;
+  padding-top: 40px; }
+
+@media only screen and (min-width: 650px) {
+  .footer__hours, .footer__location {
+    float: left;
+    width: 30%;
+    margin: 80px auto 0 10%;
+    padding: 0; } }
 body {
   padding-top: 20px; }
 
 .burger {
+  display: block;
   width: 100%;
   padding: 5px 0 2px 5px;
   background-color: #FF9B12;
@@ -158,5 +222,62 @@ body {
 
 .burger__img {
   width: 40px; }
+
+.homeAbout {
+  text-align: center;
+  width: 90%;
+  margin: 50px 5% 0 5%; }
+  .homeAbout img {
+    width: 100%;
+    padding: 20px 0; }
+  .homeAbout p {
+    text-align: left; }
+
+.homeAbout__more {
+  width: 100%; }
+  .homeAbout__more button {
+    width: 40%;
+    background-color: #FF9B12;
+    padding: 10px;
+    margin: 20px 30%;
+    border-radius: 20px;
+    cursor: pointer; }
+  .homeAbout__more button:active {
+    background-color: white; }
+
+@media only screen and (min-width: 650px) {
+  .homeAbout__content {
+    float: left;
+    width: 50%;
+    height: 50vw; }
+
+  .homeAbout img {
+    width: 50%;
+    padding: 20px 5% 20px 0;
+    float: left; }
+  .homeAbout p {
+    padding: 20px 0; }
+
+  .homeAbout__more {
+    width: 100%;
+    float: left; }
+    .homeAbout__more button {
+      width: 40%;
+      background-color: #FF9B12;
+      padding: 10px;
+      margin: 0;
+      border-radius: 20px;
+      cursor: pointer; }
+    .homeAbout__more button:active {
+      background-color: white; }
+
+  .homeAbout__more::after {
+    clear: both; } }
+@media only screen and (min-width: 1000px) {
+  .burger {
+    display: none; }
+
+  body {
+    padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

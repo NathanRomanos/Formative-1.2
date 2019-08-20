@@ -16,7 +16,7 @@
   </head>
   <body>
 
-    <div class="contentContainer">
+    <div id="top" class="contentContainer">
 
 
 <!-- BURGER MENU -->
@@ -30,43 +30,46 @@
 <!-- NAV - MOBILE AND TABLET -->
       <nav class="navMobile">
 
-        <img id="close" class="navMobile__close" src="images/close.svg" alt="navigation close button">
+        <img class="navMobile__close close" src="images/close.svg" alt="navigation close button">
 
         <br>
 
-        <img class="navMobile__logo" src="images/bebemosLogo.svg" alt="Bebemos">
+        <a class="close" href="home.html"><img class="navMobile__logo" src="images/bebemosLogo.svg" alt="Bebemos"></a>
 
         <div class="navMobile__list">
           <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="close"><a href="#scroll">Menu</a></li>
+            <li class="close"><a href="#">About</a></li>
+            <li class="close"><a href="#">Reservation</a></li>
+            <li class="close"><a href="#">Contact</a></li>
           </ul>
         </div>
 
         <div class="navMobile__social">
-          <img class="navMobile__social--img" src="images/facebook.svg" alt="Facebook icon">
-          <img class="navMobile__social--img" src="images/instagram.svg" alt="Instagram icon">
-          <img class="navMobile__social--img" src="images/twitter.svg" alt="Twitter Icon">
+          <a href="https://www.facebook.com/BebemosNewtown/" target="_blank"><img class="navMobile__social--img" src="images/facebook.svg" alt="Facebook icon"></a>
+          <a href="https://www.instagram.com/bebemosnewtown/" target="_blank"><img class="navMobile__social--img" src="images/instagram.svg" alt="Instagram icon"></a>
+          <a href="https://twitter.com/BebemosNewtown" target="_blank"><img class="navMobile__social--img" src="images/twitter.svg" alt="Twitter Icon"></a>
         </div>
 
       </nav>
 
-
-<!-- NAV - DESKTOP -->
-      <nav>
-
-      </nav>
 
 
 <!-- HEADER-->
       <div class="header">
 
-        <!-- <img class="header__img" src="images/food1.jpeg" alt=""> -->
-
         <img class="header__logo" src="images/bebemosLogo.svg" alt="">
 
+
+<!-- NAV - DESKTOP -->
+        <nav class="navDesktop">
+          <ul>
+            <li><a href="#scroll">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
 
 
         <div class="header__hours">
@@ -102,9 +105,34 @@
 
       </div>
 
+<!-- HOME ABOUT -->
+      <section class="homeAbout">
+
+        <h2>About</h2>
+
+        <img class="homeAbout__image" src="images/outside.jpg" alt="">
+
+        <div class="homeAbout__content">
+          <p>
+            Bebemos (“bi-beer-mos”) is Newtown’s relaxation headquarters.
+            <br>
+            <br>
+            Enjoy any of our 60+ international and local boutique bottled beers, our revolving selection of 11 taps, ever popular Latin-influenced menu and fine wines and cocktails.
+            <br>
+            <br>
+            Either park up next to the fire inside, or protected from the elements in the Cabana - the heated beer garden out back.
+          </p>
+
+          <div class="homeAbout__more">
+            <button type="button" name="button">Read more</button>
+          </div>
+        </div>
+        <hr>
+      </section>
+
 
 <!-- MENU -->
-      <div class="menu">
+      <section class="menu">
 
 <!-- MENU HEADER -->
         <div class="menu__header">
@@ -478,13 +506,46 @@
           <button type="button" name="button">Reserve a table now</button>
         </span>
 
+      </section>
+      <!-- end of menu section -->
 
 
-      </div>
+<!-- Footer -->
+      <footer>
 
+        <div class="footer__social">
+          <a href="https://www.facebook.com/BebemosNewtown/" target="_blank">  <img class="footer__social--img" src="images/facebook.svg" alt="Facebook icon"></a>
+          <a href="https://www.instagram.com/bebemosnewtown/" target="_blank"><img class="footer__social--img" src="images/instagram.svg" alt="Instagram icon"></a>
+          <a href="https://twitter.com/BebemosNewtown" target="_blank"><img class="footer__social--img" src="images/twitter.svg" alt="Twitter Icon"></a>
+        </div>
 
+        <div class="footer__hours">
+          <h2 class="footer__hours--heading">
+            Opening Hours
+          </h2>
+          <p class="footer__hours--para">
+            Sun - Thurs: 11am -late
+            <br>
+            Fri: 9am - late
+            <br>
+            Sat: 10am - late
+          </p>
+        </div>
 
+        <div class="footer__location">
+          <h2 class="footer__location--heading">
+            Location
+          </h2>
+          <p class="footer__location--para">
+            88 Riddiford St,
+            <br>
+            Newtown,
+            <br>
+            Wellington
+          </p>
+        </div>
 
+      </footer>
 
 
 
