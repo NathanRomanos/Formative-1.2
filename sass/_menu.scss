@@ -14,11 +14,17 @@
 
 
 .menu__selectors{
-  img{
+  width: 100%;
+  height: 50px;
+  h3{
+    float: left;
   }
-  img, h3{
-    display: inline;
-  }
+    img{
+      width: 1em;
+      height: 1em;
+      float: left;
+      margin: 3px 0 0 10px;
+    }
 }
 
 
@@ -59,5 +65,34 @@
   }
   button:active{
     background-color: white;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 650px){
+  .menu__book{
+    button{
+      width: 24%;
+      margin: 50px 38%;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1000px){
+  .menu__item{
+    width: 46%;
+    float: left;
+    margin: 0 2%;
+  }
+
+  .menu__book{
+    button{
+      width: 16%;
+      margin: 50px 42%;
+    }
   }
 }

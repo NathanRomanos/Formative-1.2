@@ -12,6 +12,7 @@
 .navMobile__close{
   width: 40px;
   padding: 5px 0 0 5px;
+  cursor: pointer;
 }
 
 .navMobile__logo{
@@ -24,11 +25,18 @@
   ul{
     li{
       text-align: center;
-      color: $color2;
-      font-family: monospace;
-      font-size: $fontH;
       margin: 5vh;
+      a{
+        @include font(futura, 2em, white, normal)
+      }
     }
+  }
+}
+
+.navMobile__list--hover:hover{
+  background-color: $color2;
+  a{
+    color: $color1;
   }
 }
 

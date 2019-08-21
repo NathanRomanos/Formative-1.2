@@ -17,13 +17,24 @@ footer{
   padding-top: 25px;
   text-align: center;
   color: $color2;
-
+  h2{
+    color: $color2;
+  }
+  p{
+    color: $color2;
+  }
 }
 
 .footer__location{
   text-align: center;
   color: $color2;
   padding-top: 40px;
+  h2{
+    color: $color2;
+  }
+  p{
+    color: $color2;
+  }
 }
 
 

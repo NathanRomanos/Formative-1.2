@@ -16,11 +16,15 @@ body{
 }
 
 h2{
-
+  @include font(futura, 2em, black, normal)
 }
 
 h3{
+  @include font(futura, 1.3em, black, normal)
+}
 
+p{
+  @include font(futura, 1em, black, 1.3em)
 }
 
 
@@ -36,6 +40,7 @@ h3{
 
 .burger__img{
   width: 40px;
+  cursor: pointer;
 }
 
 
