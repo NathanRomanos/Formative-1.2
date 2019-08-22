@@ -59,17 +59,37 @@
 
 .menu__header {
   text-align: center; }
+  .menu__header h4 {
+    color: #FF9B12; }
 
 .menu__selectors {
   width: 100%;
   height: 50px; }
   .menu__selectors h3 {
-    float: left; }
-  .menu__selectors img {
-    width: 1em;
-    height: 1em;
     float: left;
-    margin: 3px 0 0 10px; }
+    cursor: pointer; }
+  .menu__selectors img {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 8px 0 0 10px; }
+
+.menu__change {
+  width: 177.52px;
+  position: absolute;
+  background-color: white;
+  margin-top: -52px;
+  display: none; }
+  .menu__change ul li {
+    font-family: futura;
+    font-size: 1.3em;
+    color: black;
+    line-height: 50px;
+    cursor: pointer; }
+
+.menu__change--hover:hover {
+  color: white;
+  background-color: #FF9B12; }
 
 .menu__item {
   width: 100%; }
@@ -99,9 +119,23 @@
     padding: 10px;
     margin: 50px 30%;
     border-radius: 20px;
-    cursor: pointer; }
-  .menu__book button:active {
-    background-color: white; }
+    cursor: pointer;
+    font-family: futura;
+    font-size: 1em;
+    color: white;
+    line-height: inherit; }
+
+.menu__content--LB {
+  display: block; }
+
+.menu__content--SP {
+  display: none; }
+
+#menu__header--LB {
+  display: block; }
+
+#menu__header--SP {
+  display: none; }
 
 @media only screen and (min-width: 650px) {
   .menu__book button {
@@ -127,14 +161,6 @@
   background-size: cover;
   /* Resize the background image to cover the entire container */ }
 
-.header__transImg {
-  width: 60%;
-  height: 50vh;
-  position: relative;
-  top: 300px;
-  left: 250px;
-  z-index: 0; }
-
 .header__logo {
   width: 80%;
   margin: 8vh 10% 0 10%;
@@ -145,7 +171,10 @@
   margin-top: 8vh; }
   .navDesktop ul {
     text-align: center;
-    background-image: url(../images/rectangle2.png); }
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 840px;
+    padding: 10px 0;
+    margin: 0 auto; }
     .navDesktop ul li {
       text-align: center;
       margin: 5vh;
@@ -173,7 +202,7 @@
   text-align: center;
   width: 60%;
   margin: 12vh auto 0 auto;
-  background-image: url(../images/rectangle2.png); }
+  background-color: rgba(0, 0, 0, 0.4); }
   .header__hours h2 {
     color: white; }
   .header__hours p {
@@ -186,7 +215,7 @@
   width: 60%;
   color: white;
   margin: auto;
-  background-image: url(../images/rectangle2.png); }
+  background-color: rgba(0, 0, 0, 0.4); }
   .header__location h2 {
     color: white; }
   .header__location p {
@@ -204,18 +233,16 @@
   .header__hours {
     float: left;
     padding: 20px 0;
-    text-align: center;
     width: 20%;
-    margin: 8vh 0 0 30%;
-    background-image: url(../images/rectangle2.png); }
+    height: 184px;
+    margin: 8vh 0 0 30%; }
 
   .header__location {
     float: left;
     padding: 20px 0;
-    text-align: center;
     width: 20%;
-    margin: 8vh 30% 0 0%;
-    background-image: url(../images/rectangle2.png); }
+    height: 184px;
+    margin: 8vh 30% 0 0%; }
 
   .navDesktop {
     display: block; } }
@@ -276,6 +303,12 @@ p {
   color: black;
   line-height: 1.3em; }
 
+b {
+  font-family: futura;
+  font-size: 1em;
+  color: black;
+  line-height: inherit; }
+
 .burger {
   display: block;
   width: 100%;
@@ -307,9 +340,11 @@ p {
     padding: 10px;
     margin: 20px 30%;
     border-radius: 20px;
-    cursor: pointer; }
-  .homeAbout__more button:active {
-    background-color: white; }
+    cursor: pointer;
+    font-family: futura;
+    font-size: 1em;
+    color: white;
+    line-height: inherit; }
 
 @media only screen and (min-width: 650px) {
   .homeAbout__content {
@@ -334,8 +369,6 @@ p {
       margin: 0;
       border-radius: 20px;
       cursor: pointer; }
-    .homeAbout__more button:active {
-      background-color: white; }
 
   .homeAbout__more::after {
     clear: both; } }

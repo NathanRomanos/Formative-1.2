@@ -16,15 +16,19 @@ body{
 }
 
 h2{
-  @include font(futura, 2em, black, normal)
+  @include font(futura, 2em, $color3, normal)
 }
 
 h3{
-  @include font(futura, 1.3em, black, normal)
+  @include font(futura, 1.3em, $color3, normal)
 }
 
 p{
-  @include font(futura, 1em, black, 1.3em)
+  @include font(futura, 1em, $color3, 1.3em)
+}
+
+b{
+  @include font(futura, 1em, $color3, inherit);
 }
 
 
@@ -66,9 +70,7 @@ p{
     margin: 20px 30%;
     border-radius: 20px;
     cursor: pointer;
-  }
-  button:active{
-    background-color: white;
+    @include font(futura, 1em, $color2, inherit);
   }
 }
 
@@ -99,9 +101,6 @@ p{
       margin: 0;
       border-radius: 20px;
       cursor: pointer;
-    }
-    button:active{
-      background-color: white;
     }
   }
   .homeAbout__more::after{

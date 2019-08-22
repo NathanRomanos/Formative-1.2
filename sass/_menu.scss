@@ -10,6 +10,9 @@
 
 .menu__header{
   text-align: center;
+  h4{
+    color: $color1;
+  }
 }
 
 
@@ -18,13 +21,34 @@
   height: 50px;
   h3{
     float: left;
+    cursor: pointer;
   }
     img{
-      width: 1em;
-      height: 1em;
+      width: 14px;
+      height: 14px;
       float: left;
-      margin: 3px 0 0 10px;
+      margin: 8px 0 0 10px;
     }
+}
+
+
+.menu__change{
+  width: 177.52px;
+  position: absolute;
+  background-color: $color2;
+  margin-top: -52px;
+  display: none;
+  ul{
+    li{
+      @include font(futura, 1.3em, $color3, 50px);
+      cursor: pointer;
+    }
+  }
+}
+
+.menu__change--hover:hover{
+  color: $color2;
+  background-color: $color1;
 }
 
 
@@ -62,11 +86,28 @@
     margin: 50px 30%;
     border-radius: 20px;
     cursor: pointer;
-  }
-  button:active{
-    background-color: white;
+    @include font(futura, 1em, $color2, inherit);
   }
 }
+
+
+// Differnt Menus
+.menu__content--LB{
+  display: block;
+}
+
+.menu__content--SP{
+  display: none;
+}
+
+#menu__header--LB{
+  display: block;
+}
+
+#menu__header--SP{
+  display: none;
+}
+
 
 
 
