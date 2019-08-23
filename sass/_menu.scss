@@ -91,6 +91,14 @@
 }
 
 
+// Active/Inactive JS
+.active {
+  display: block !important;
+}
+.inactive {
+  display: none !important;
+}
+
 // Differnt Menus
 .menu__content--LB{
   display: block;
@@ -100,11 +108,37 @@
   display: none;
 }
 
-#menu__header--LB{
+.menu__content--DE{
+  display: none;
+}
+
+.menu__content--SI{
+  display: none;
+}
+
+.menu__content--DI{
+  display: none;
+}
+
+
+
+.menu__header--LB{
   display: block;
 }
 
-#menu__header--SP{
+.menu__header--SP{
+  display: none;
+}
+
+.menu__header--DE{
+  display: none;
+}
+
+.menu__header--SI{
+  display: none;
+}
+
+.menu__header--DI{
   display: none;
 }
 

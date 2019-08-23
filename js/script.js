@@ -15,13 +15,52 @@ $(document).ready(function(){
     $('.menu__change').fadeToggle(200);
   })
 
-  $('#sp').click(function(){
-    $('.menu__content--SP, #menu__header--SP').fadeToggle(000);
-    $('.menu__content--LB, #menu__header--LB').fadeToggle(000);
-  })
-
   $('.menu__close').click(function(){
     $('.menu__change').fadeOut(200);
+  })
+
+});
+
+
+$(document).ready(function(){
+  $('#sp').click(function(){
+    $('.menu__content--SP, .menu__header--SP').removeClass("inactive").addClass( "active" );
+    $('.menu__content--LB, .menu__header--LB').removeClass("active").addClass( "inactive" );
+    $('.menu__content--DE, .menu__header--DE').removeClass("active").addClass( "inactive" );
+    $('.menu__content--SI, .menu__header--SI').removeClass("active").addClass( "inactive" );
+    $('.menu__content--DI, .menu__header--DI').removeClass("active").addClass( "inactive" );
+  })
+
+  $('#lb').click(function(){
+    $('.menu__content--LB, .menu__header--LB').removeClass("inactive").addClass( "active" );
+    $('.menu__content--SP, .menu__header--SP').removeClass("active").addClass( "inactive" );
+    $('.menu__content--DE, .menu__header--DE').removeClass("active").addClass( "inactive" );
+    $('.menu__content--SI, .menu__header--SI').removeClass("active").addClass( "inactive" );
+    $('.menu__content--DI, .menu__header--DI').removeClass("active").addClass( "inactive" );
+  })
+
+  $('#de').click(function(){
+    $('.menu__content--DE, .menu__header--DE').removeClass("inactive").addClass( "active" );
+    $('.menu__content--LB, .menu__header--LB').removeClass("active").addClass( "inactive" );
+    $('.menu__content--SP, .menu__header--SP').removeClass("active").addClass( "inactive" );
+    $('.menu__content--SI, .menu__header--SI').removeClass("active").addClass( "inactive" );
+    $('.menu__content--DI, .menu__header--DI').removeClass("active").addClass( "inactive" );
+  })
+
+  $('#si').click(function(){
+    $('.menu__content--SI, .menu__header--SI').removeClass("inactive").addClass( "active" );
+    $('.menu__content--LB, .menu__header--LB').removeClass("active").addClass( "inactive" );
+    $('.menu__content--SP, .menu__header--SP').removeClass("active").addClass( "inactive" );
+    $('.menu__content--DE, .menu__header--DE').removeClass("active").addClass( "inactive" );
+    $('.menu__content--DI, .menu__header--DI').removeClass("active").addClass( "inactive" );
+  })
+
+  $('#di').click(function(){
+    $('.menu__content--DI, .menu__header--DI').removeClass("inactive").addClass( "active" );
+    $('.menu__content--LB, .menu__header--LB').removeClass("active").addClass( "inactive" );
+    $('.menu__content--SP, .menu__header--SP').removeClass("active").addClass( "inactive" );
+    $('.menu__content--DE, .menu__header--DE').removeClass("active").addClass( "inactive" );
+    $('.menu__content--SI, .menu__header--SI').removeClass("active").addClass( "inactive" );
   })
 
 });

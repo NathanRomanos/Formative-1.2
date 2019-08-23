@@ -8,11 +8,7 @@
     <meta name="keywords" content="keywords,here">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="css/style.css">
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-    <title>title</title>
+    <title>Bebemos</title>
   </head>
   <body>
 
@@ -137,8 +133,11 @@
 <!-- MENU HEADER -->
         <div class="menu__header">
           <h2>Menu</h2>
-          <h4 id="menu__header--LB">Lunch/Brunch</h4>
-          <h4 id="menu__header--SP">Small Plates</h4>
+          <h4 class="menu__header--LB">Lunch/Brunch</h4>
+          <h4 class="menu__header--SP">Small Plates</h4>
+          <h4 class="menu__header--DE">Dessert</h4>
+          <h4 class="menu__header--SI">Sides</h4>
+          <h4 class="menu__header--DI">Dinner</h4>
         </div>
 
 
@@ -162,9 +161,9 @@
         <ul>
           <li id="sp" class="menu__change--hover menu__close">Small Plates</li>
           <li id="lb" class="menu__change--hover menu__close">Lunch/Brunch</li>
-          <li class="menu__change--hover">Dinner</li>
-          <li class="menu__change--hover">Sides</li>
-          <li class="menu__change--hover">Dessert</li>
+          <li id="di" class="menu__change--hover menu__close">Dinner</li>
+          <li id="si" class="menu__change--hover menu__close">Sides</li>
+          <li id="de" class="menu__change--hover menu__close">Dessert</li>
         </ul>
       </div>
 
@@ -632,6 +631,135 @@
               </div>
             </div>
           </section>
+
+
+<!-- DESSERT MENU -->
+          <section class="menu__content--DE">
+            <div class="menu__item">
+              <div class="menu__item--text">
+                <br>
+                <br>
+                <h3>Churros (v)</h3>
+                <p>
+                  South American doughnuts (3) dusted with cinnamon & brown sugar, with chocolate sauce.
+                  <br>
+                  <b>Add vanilla bean ice cream $4</b>
+                </p>
+              </div>
+
+              <div class="menu__item--price">
+                <br>
+                <br>
+                <h3>$9</h3>
+              </div>
+            </div>
+          </section>
+
+
+<!-- SIDES MENU -->
+          <section class="menu__content--SI">
+            <div class="menu__item">
+              <div class="menu__item--text">
+                <br>
+                <br>
+                <h3>Biro biro rice (v) (gf)</h3>
+                <p>
+
+                  <br>
+                  <b></b>
+                </p>
+              </div>
+
+              <div class="menu__item--price">
+                <br>
+                <br>
+                <h3>$4</h3>
+              </div>
+            </div>
+
+            <div class="menu__item">
+              <div class="menu__item--text">
+                <br>
+                <br>
+                <h3>Gallitos de Papa (vg) (gf)</h3>
+                <p>
+                   Costa Rican style fried & seasoned potatoes.
+                  <br>
+                  <b></b>
+                </p>
+              </div>
+
+              <div class="menu__item--price">
+                <br>
+                <br>
+                <h3>$9</h3>
+              </div>
+            </div>
+
+            <div class="menu__item">
+              <div class="menu__item--text">
+                <br>
+                <br>
+                <h3>Smoked Pumpkin Purée (v) (gf) </h3>
+                <p>
+
+                  <br>
+                  <b></b>
+                </p>
+              </div>
+
+              <div class="menu__item--price">
+                <br>
+                <br>
+                <h3>$8</h3>
+              </div>
+            </div>
+
+            <div class="menu__item">
+              <div class="menu__item--text">
+                <br>
+                <br>
+                <h3>Pan-fried Greens (vg*) (gf) </h3>
+                <p>
+                  Pan-fried Greens with crispy chickpeas & lemon.
+                  <br>
+                  <b></b>
+                </p>
+              </div>
+
+              <div class="menu__item--price">
+                <br>
+                <br>
+                <h3>$9</h3>
+              </div>
+            </div>
+          </section>
+
+
+<!-- DINNER MENU -->
+          <section class="menu__content--DI">
+            <div class="menu__item">
+              <div class="menu__item--text">
+                <br>
+                <br>
+                <h3>Churros (v)</h3>
+                <p>
+
+                  <br>
+                  <b></b>
+                </p>
+              </div>
+
+              <div class="menu__item--price">
+                <br>
+                <br>
+                <h3></h3>
+              </div>
+            </div>
+          </section>
+
+
+
         </section>
 
 
@@ -687,7 +815,10 @@
 
     </div>
 
-
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
