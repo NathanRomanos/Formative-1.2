@@ -28,6 +28,7 @@
       height: 14px;
       float: left;
       margin: 8px 0 0 10px;
+      cursor: pointer;
     }
 }
 
@@ -40,7 +41,7 @@
   display: none;
   ul{
     li{
-      @include font(futura, 1.3em, $color3, 50px);
+      @include font($font1, 1.3em, $color3, 50px);
       cursor: pointer;
     }
   }
@@ -86,7 +87,7 @@
     margin: 50px 30%;
     border-radius: 20px;
     cursor: pointer;
-    @include font(futura, 1em, $color2, inherit);
+    @include font($font1, 1em, $color2, inherit);
   }
 }
 
@@ -120,6 +121,9 @@
   display: none;
 }
 
+.menu__content--DR{
+  display: none;
+}
 
 
 .menu__header--LB{
@@ -139,6 +143,10 @@
 }
 
 .menu__header--DI{
+  display: none;
+}
+
+.menu__header--DR{
   display: none;
 }
 

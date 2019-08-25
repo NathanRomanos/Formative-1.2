@@ -16,19 +16,19 @@ body{
 }
 
 h2{
-  @include font(futura, 2em, $color3, normal)
+  @include font($font1, 2em, $color3, normal)
 }
 
 h3{
-  @include font(futura, 1.3em, $color3, normal)
+  @include font($font1, 1.3em, $color3, normal)
 }
 
 p{
-  @include font(futura, 1em, $color3, 1.3em)
+  @include font($font1, 1em, $color3, 1.3em)
 }
 
 b{
-  @include font(futura, 1em, $color3, inherit);
+  @include font($font1, 1em, $color3, inherit);
 }
 
 
@@ -70,7 +70,7 @@ b{
     margin: 20px 30%;
     border-radius: 20px;
     cursor: pointer;
-    @include font(futura, 1em, $color2, inherit);
+    @include font($font1, 1em, $color2, inherit);
   }
 }
 

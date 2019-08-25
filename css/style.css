@@ -32,7 +32,7 @@
     text-align: center;
     margin: 5vh; }
     .navMobile__list ul li a {
-      font-family: futura;
+      font-family: futura, sans-serif;
       font-size: 2em;
       color: white;
       line-height: normal; }
@@ -72,7 +72,8 @@
     width: 14px;
     height: 14px;
     float: left;
-    margin: 8px 0 0 10px; }
+    margin: 8px 0 0 10px;
+    cursor: pointer; }
 
 .menu__change {
   width: 177.52px;
@@ -81,7 +82,7 @@
   margin-top: -52px;
   display: none; }
   .menu__change ul li {
-    font-family: futura;
+    font-family: futura, sans-serif;
     font-size: 1.3em;
     color: black;
     line-height: 50px;
@@ -120,7 +121,7 @@
     margin: 50px 30%;
     border-radius: 20px;
     cursor: pointer;
-    font-family: futura;
+    font-family: futura, sans-serif;
     font-size: 1em;
     color: white;
     line-height: inherit; }
@@ -146,6 +147,9 @@
 .menu__content--DI {
   display: none; }
 
+.menu__content--DR {
+  display: none; }
+
 .menu__header--LB {
   display: block; }
 
@@ -159,6 +163,9 @@
   display: none; }
 
 .menu__header--DI {
+  display: none; }
+
+.menu__header--DR {
   display: none; }
 
 @media only screen and (min-width: 650px) {
@@ -192,7 +199,7 @@
 
 .navDesktop {
   display: none;
-  margin-top: 8vh; }
+  margin-top: 4vh; }
   .navDesktop ul {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
@@ -204,7 +211,7 @@
       margin: 5vh;
       display: inline; }
       .navDesktop ul li a {
-        font-family: futura;
+        font-family: futura, sans-serif;
         font-size: 2em;
         color: white;
         line-height: normal; }
@@ -259,14 +266,14 @@
     padding: 20px 0;
     width: 20%;
     height: 184px;
-    margin: 8vh 0 0 30%; }
+    margin: 4vh 0 0 30%; }
 
   .header__location {
     float: left;
     padding: 20px 0;
     width: 20%;
     height: 184px;
-    margin: 8vh 30% 0 0%; }
+    margin: 4vh 30% 0 0%; }
 
   .navDesktop {
     display: block; } }
@@ -310,25 +317,25 @@ body {
   padding-top: 20px; }
 
 h2 {
-  font-family: futura;
+  font-family: futura, sans-serif;
   font-size: 2em;
   color: black;
   line-height: normal; }
 
 h3 {
-  font-family: futura;
+  font-family: futura, sans-serif;
   font-size: 1.3em;
   color: black;
   line-height: normal; }
 
 p {
-  font-family: futura;
+  font-family: futura, sans-serif;
   font-size: 1em;
   color: black;
   line-height: 1.3em; }
 
 b {
-  font-family: futura;
+  font-family: futura, sans-serif;
   font-size: 1em;
   color: black;
   line-height: inherit; }
@@ -365,7 +372,7 @@ b {
     margin: 20px 30%;
     border-radius: 20px;
     cursor: pointer;
-    font-family: futura;
+    font-family: futura, sans-serif;
     font-size: 1em;
     color: white;
     line-height: inherit; }

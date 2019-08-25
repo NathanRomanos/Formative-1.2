@@ -27,7 +27,7 @@
       text-align: center;
       margin: 5vh;
       a{
-        @include font(futura, 2em, $color2, normal)
+        @include font($font1, 2em, $color2, normal)
       }
     }
   }

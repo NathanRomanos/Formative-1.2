@@ -15,7 +15,7 @@
 
 .navDesktop{
   display: none;
-  margin-top: 8vh;
+  margin-top: 4vh;
   ul{
     text-align: center;
     background-color: $color4;
@@ -27,7 +27,7 @@
       margin: 5vh;
       display: inline;
       a{
-        @include font(futura, 2em, $color2, normal)
+        @include font($font1, 2em, $color2, normal)
       }
     }
   }
@@ -98,7 +98,7 @@
     padding: 20px 0;
     width: 20%;
     height: 184px;
-    margin: 8vh 0 0 30%;
+    margin: 4vh 0 0 30%;
   }
 
   .header__location{
@@ -106,7 +106,7 @@
     padding: 20px 0;
     width: 20%;
     height: 184px;
-    margin: 8vh 30% 0 0%;
+    margin: 4vh 30% 0 0%;
   }
 
   .navDesktop{
