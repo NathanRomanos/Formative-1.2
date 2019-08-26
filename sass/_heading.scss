@@ -1,4 +1,4 @@
-.header{
+.header__home{
   width: 100%;
   height: 100vh;
   background-image: url("../images/food1.jpeg");
@@ -79,6 +79,23 @@
   }
 }
 
+
+// OTHER PAGES HEADER
+.header__other{
+  width: 100%;
+  height: 50vh;
+  background-image: url("../images/food1.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+
+
+
+
+// MEDIA QUERIES
 @media only screen and (min-width: 650px){
 
   .header__logo{
