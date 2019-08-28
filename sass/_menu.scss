@@ -92,6 +92,12 @@
   }
 }
 
+.menu__drinks--header{
+  margin-top: 100px;
+  width: 100%;
+  float: left;
+}
+
 
 // Active/Inactive JS
 .active {
@@ -124,6 +130,10 @@
 
 .menu__content--DR{
   display: none;
+  h2{
+    text-align: center;
+    color: $color1;
+  }
 }
 
 

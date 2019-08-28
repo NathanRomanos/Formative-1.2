@@ -127,6 +127,11 @@
     color: white;
     line-height: inherit; }
 
+.menu__drinks--header {
+  margin-top: 100px;
+  width: 100%;
+  float: left; }
+
 .active {
   display: block !important; }
 
@@ -150,6 +155,9 @@
 
 .menu__content--DR {
   display: none; }
+  .menu__content--DR h2 {
+    text-align: center;
+    color: #FF9B12; }
 
 .menu__header--LB {
   display: block; }
