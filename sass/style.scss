@@ -12,15 +12,15 @@
 
 body{
   // background-color: grey;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 h2{
-  @include font($font1, 2em, $color3, normal)
+  @include font($font1, 1.6em, $color3, normal)
 }
 
 h3{
-  @include font($font1, 1.3em, $color3, normal)
+  @include font($font1, 1.2em, $color3, normal)
 }
 
 p{
@@ -38,7 +38,7 @@ b{
   padding: 5px 0 2px 5px;
   background-color: $color1;
   position: fixed;
-  top: 0;
+  top: 0px;
   z-index: 2;
 }
 
@@ -101,6 +101,7 @@ b{
       margin: 0;
       border-radius: 20px;
       cursor: pointer;
+      outline: none;
     }
   }
   .homeAbout__more::after{

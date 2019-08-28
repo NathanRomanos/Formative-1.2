@@ -87,6 +87,7 @@
     margin: 50px 30%;
     border-radius: 20px;
     cursor: pointer;
+    outline: none;
     @include font($font1, 1em, $color2, inherit);
   }
 }
